@@ -1,0 +1,242 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+}
+
+.header {
+	background-color:#fff;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+	padding: 20px 40px;
+	height: 80px;
+	color: #cccc;
+	box-sizing: border-box;
+	top:-100px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header .container-header {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+
+.header .container-header h1 {
+	float: left;
+	font-size: 28px;
+	line-height: 40px;
+  margin: 0;
+  color:#F5620C
+}
+
+.header .container-header a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header .container-header nav {
+	font-size: 16px;
+	line-height: 40px;
+	float: right;
+}
+
+.header .container-header nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #666;
+	opacity: 0.9;
+}
+
+.header .container-header nav a:hover{
+    opacity: 1;
+    color: #F5620C;
+}
+
+.sidenav-overlay{
+	z-index: 995;
+}
+
+.slider{
+	width: 100%;
+	margin: 0px;
+ 	overflow: hidden;
+ 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	margin: -4px;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+	margin: -8px;
+}
+
+.slider img {
+	width: 100%;
+}
+.sidenav-overlay{
+	z-index: 995;
+}
+
+.container-success{
+	padding: 30px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.container-success .card-success {
+	width: 30.3%;
+	display: inline-block;
+	padding: 8px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+	margin: 8px;
+}
+
+.header-success{
+	display: flex;
+}
+
+.container-success .card-success .info {
+	margin-top: 36px;
+}
+
+.container-company{
+	background-color: #f8f9f9;
+	padding: 30px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.container-company h2 , .container-team h2 , .container-success h2{
+	font-size: 28px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: relative;
+	margin-top: 0px;
+	text-align: center;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container-text{
+	display: flex;
+	justify-content: center;
+}
+
+.container-text div{
+	text-align: justify;
+	margin: 15px;
+	width: 40%;
+	color:#666;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container-team{
+	padding: 30px;
+	text-align: center;
+}
+
+.container-team .card {
+	width: 30.3%;
+	display: inline-block;
+	padding: 8px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+	margin: 8px;
+}
+
+.container-team .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-team .card .container {
+  padding: 2px 16px;
+}
+
+ .container  h4{
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: -13px;
+ }
+
+ .container  .profession{
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+ }
+
+ .container  .info{
+	color: #999;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+ }
+
+
+@media all and (max-width: 600px) {
+	.header {
+		padding: 20px 0;
+		height: 100px;
+	}
+
+	.header .container-header h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header  .container-header nav {
+		line-height: 1.5;
+		float:none;
+	}
+
+	.header .container-header nav a {
+		font-size: 13px;
+	}
+
+	.container-team .card, .container-success .card-success {
+		width: 100%;
+		padding: 0px;
+	}
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F5620C;
+  color: white;
+  text-align: center;
+}
+
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
